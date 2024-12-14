@@ -4,8 +4,9 @@ export default {
 	theme: {
 		extend: {},
 	},
-	plugins: [require("@tailwindcss/typography"),require("daisyui")],
+	plugins: [],
 	daisyui: {
-		themes: ["light", "dark"],
+		// themes: ["light", "dark"],
+		themes:false,
 	}
 }

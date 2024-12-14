@@ -6,7 +6,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "watch": "sass --watch --style=compressed ./src/scss/global/index.scss:public/assets/css/global.css ./src/scss/modules:public/assets/css/modules",
+    "watch": "sass --watch --style=compressed ./src/scss/global/index.scss:./src/styles/assets/css/global.css ./src/scss/modules:src/styles/assets/css/modules",
     "preview": "astro preview",
     "astro": "astro"
   },
