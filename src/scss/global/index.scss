@@ -1,2 +1,9 @@
 @use "global.scss";
 @use "./reset.scss";
+@use "./fonts.scss";
+@use "./theme.scss";
+@use "./layout.scss";
+@use "./components/inputs.scss";
+* {
+  box-sizing: border-box;
+}
