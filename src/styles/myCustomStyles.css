@@ -1,0 +1,14 @@
+/* Diagnostic Styling */
+* {
+    outline: 1px solid black;
+}
+body{
+    background:linear-gradient(90deg, red 0%, blue 100%);
+    padding-inline: 10vw;
+}
+tr{
+    background:linear-gradient(90deg,var(--background-color) 0%, white 100%);
+}
+tr:nth-child(odd){
+    background:linear-gradient(90deg, white 0%, var(--background-color) 100%);
+}

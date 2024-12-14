@@ -1,0 +1,18 @@
+---
+// Base Layout
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+// Global Styles
+import "../styles/myCustomStyles.css";
+
+// Your App
+import "../components/MyApp.astro";
+import MyApp from "../components/MyApp.astro";
+// import your <App />
+import CssColors from "../components/CssColors.astro";
+---
+
+<BaseLayout>
+  <MyApp />
+  <CssColors />
+</BaseLayout>
