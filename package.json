@@ -1,11 +1,12 @@
 {
-  "name": "",
+  "name": "caelfoster.github.io",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
+    "watch": "sass --watch --style=compressed ./src/scss/global/index.scss:public/assets/css/global.css ./src/scss/modules:public/assets/css/modules",
     "preview": "astro preview",
     "astro": "astro"
   },
@@ -13,10 +14,16 @@
     "": "file:",
     "@astrojs/tailwind": "^5.1.2",
     "astro": "^4.16.13",
+    "sass": "^1.83.0",
     "tailwindcss": "^3.4.15"
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.15",
     "daisyui": "^4.12.14"
-  }
+  },
+  "description": "```sh\r npm create astro@latest -- --template minimal\r ```",
+  "main": "index.js",
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
 }
