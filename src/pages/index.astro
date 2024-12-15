@@ -4,16 +4,15 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 // Global Styles
 import "../styles/assets/css/global.css";
-// Your App
-import "../components/MyApp.astro";
-import MyApp from "../components/MyApp.astro";
-// import your <App />
-import CssColors from "../components/CssColors.astro";
+// Modules
+import Bubbles from "../components/BubbleBackdrop.astro";
+import Landing from "../components/LandingPage.astro";
 ---
 
+<!-- NOTE: when deploying deploy to dist -->
 <BaseLayout>
   <main>
-    <MyApp />
-    <CssColors />
+    <!-- <Bubbles /> -->
+    <Landing />
   </main>
 </BaseLayout>
