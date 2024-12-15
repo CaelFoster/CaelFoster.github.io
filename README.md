@@ -1,47 +1,79 @@
-# Astro Starter Kit: Minimal
+# Public Landing Page
 
-```sh
-npm create astro@latest -- --template minimal
-```
+This is the public landing page. It is a simple page that provides links to My Github, Codepen, and LinkedIn.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+## File Structure
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+├── README.md
+├── astro.config.mjs
+├── dist
+│ ├── \_astro
+│ │ ├── hoisted.BCTGVcJ4.js
+│ │ └── index.BKOzDR2g.css
+│ ├── favicon.svg
+│ ├── fonts
+│ │ ├── ChivoMono[wght].woff
+│ │ └── SegoeAlt.woff
+│ └── index.html
+├── package-lock.json
+├── package.json
+├── public
+│ ├── android-chrome-192x192.png
+│ ├── android-chrome-512x512.png
+│ ├── apple-touch-icon.png
+│ ├── assets
+│ ├── favicon-16x16.png
+│ ├── favicon-32x32.png
+│ ├── favicon.svg
+│ ├── fonts
+│ │ ├── ChivoMono[wght].woff
+│ │ └── SegoeAlt.woff
+│ └── js
+├── src
+│ ├── components
+│ │ ├── BubbleBackdrop.astro
+│ │ ├── LandingPage.astro
+│ │ └── button.astro
+│ ├── env.d.ts
+│ ├── js
+│ │ ├── modules
+│ │ │ ├── cards.js
+│ │ │ ├── light-rays.js
+│ │ │ └── liquidLamp.js
+│ │ └── remove-debut-attrs.js
+│ ├── layouts
+│ │ └── BaseLayout.astro
+│ ├── pages
+│ │ └── index.astro
+│ ├── scss
+│ │ ├── global
+│ │ │ ├── components
+│ │ │ ├── fonts.scss
+│ │ │ ├── global.scss
+│ │ │ ├── index.scss
+│ │ │ ├── layout.scss
+│ │ │ ├── reset.scss
+│ │ │ └── theme.scss
+│ │ ├── mixins
+│ │ │ ├── breakpoints.scss
+│ │ │ ├── colors.scss
+│ │ │ └── typography.scss
+│ │ └── modules
+│ │ ├── bubbles.scss
+│ │ └── landing.scss
+│ └── styles
+│ └── assets
+│ └── css
+├── tailwind.config.mjs
+└── tsconfig.json
 
-## 🚀 Project Structure
+Figured this might be useful
 
-Inside of your Astro project, you'll see the following folders and files:
+## issues
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### FIXED
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+I accidentally made it only viewable on 1440px and lower at first using overflow
+hidden on the body, this prevented the user from scrolling to see the rest of the page
+if the content grew beyond the viewport. I fixed that issue but now the page sucks on
+lower resolutions, I will fix this later, i have to restructure the dom to do that I think. a couple divs like to stretch the page a bunch with how theyre animated.

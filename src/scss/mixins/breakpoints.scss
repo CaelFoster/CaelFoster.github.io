@@ -11,10 +11,6 @@ $max-width-2: 100rem;
 $tiny: 32rem;
 $mobile: 48rem; // 768px
 $tablet: 62rem; // 992px
-$desktop: 75rem; // 1200px
-$xlarge: 96rem;
-$fourk: 120rem;
-$max: 144rem;
 
 @mixin tiny() {
   @media (min-width: $tiny) {
@@ -36,24 +32,6 @@ $max: 144rem;
 
 @mixin desktop() {
   @media (min-width: $desktop) {
-    @content;
-  }
-}
-
-@mixin xlarge() {
-  @media (min-width: $xlarge) {
-    @content;
-  }
-}
-
-@mixin fourk() {
-  @media (min-width: $fourk) {
-    @content;
-  }
-}
-
-@mixin max() {
-  @media (min-width: $max) {
     @content;
   }
 }
