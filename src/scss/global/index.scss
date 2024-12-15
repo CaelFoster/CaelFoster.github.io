@@ -9,9 +9,10 @@
 * {
   box-sizing: border-box;
 }
+
 body {
   position: relative;
-  overflow: hidden;
+  overflow: auto;
 
   background: radial-gradient(
     circle at 50% 5%,
@@ -22,7 +23,7 @@ body {
   );
 
   width: 100vw;
-  height: 100vh;
+  height: 100vw;
 }
 #bg {
   position: absolute;

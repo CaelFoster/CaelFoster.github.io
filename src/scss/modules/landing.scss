@@ -1,7 +1,7 @@
 @use "../mixins/colors.scss";
 $min-width: 53rem;
 section.landing {
-  padding: var(--spacing-3xl) var(--standard-section-padding-x);
+  padding: var(--spacing-xl) calc(var(--standard-section-padding-x) / 2);
   margin-block: auto;
   container-type: inline-size;
 
@@ -62,6 +62,10 @@ section.landing {
             .eyebrow {
               padding-left: var(--spacing-xxs);
             }
+
+            a:hover {
+              border-bottom: 1px solid var(--text-color-primary);
+            }
           }
           &:nth-last-child(n) {
             border-bottom: 1px solid var(--text-color-primary);
@@ -78,9 +82,6 @@ section.landing {
           .text-fields {
             .copy .eyebrow {
               padding-left: 0;
-            }
-            .icon {
-              display: none;
             }
           }
         }
