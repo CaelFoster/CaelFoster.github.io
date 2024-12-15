@@ -4,13 +4,10 @@
 @use "./theme.scss";
 @use "./layout.scss";
 @use "./components/inputs.scss";
+@use "./components/button.scss";
+// mixins dont work
 * {
   box-sizing: border-box;
-}
-.container {
-  position: relative;
-  width: 100%;
-  height: 100%;
 }
 body {
   position: relative;
@@ -23,6 +20,7 @@ body {
     rgba(0, 50, 100, 1) 65%,
     rgba(0, 20, 60, 1) 100%
   );
+
   width: 100vw;
   height: 100vh;
 }
@@ -44,10 +42,11 @@ body {
 }
 .ray {
   position: absolute;
-  top: -60%;
+  top: -57%;
   left: 0%;
   width: 100%;
   height: 100%;
+  filter: blur(0.5rem);
   mix-blend-mode: color-dodge;
 }
 

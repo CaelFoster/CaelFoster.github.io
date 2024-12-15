@@ -1,43 +1,14 @@
 // Define fonts here
-// Prefer variable (wght) if we need more than one weight
 
 @font-face {
-  font-family: Helvetica LT Std;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/HelveticaLTStd-Bold.woff");
-  font-weight: 700;
-  font-style: bold;
-}
-@font-face {
-  font-family: Helvetica LT Std;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/HelveticaLTStd-Roman.woff");
-  font-weight: 400;
+  font-family: Segoe Alt;
+  src: url("public/assets/fonts/ChivoMono[wght].woff");
+  font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: Roboto;
+  font-family: Chivo Mono;
+  src: url("public/assets/fonts/SegoeAlt.woff");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/Roboto-Regular.woff");
-}
-@font-face {
-  font-family: Suisse Intl;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/SuisseIntl-Regular.woff");
-  // ascent-override: 0%;
-  descent-override: 10%;
-}
-@font-face {
-  font-family: Suisse Intl;
-  font-style: normal;
-  font-weight: 900;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/SuisseIntl-Black.woff");
-  // ascent-override: 0%;
-  descent-override: 10%;
-}
-@font-face {
-  font-family: Suisse Intl Mono;
-  font-style: normal;
-  font-weight: 400;
-  src: url("/wp-content/themes/propaganda-theme/assets/fonts/SuisseIntlMono-Regular.woff");
 }

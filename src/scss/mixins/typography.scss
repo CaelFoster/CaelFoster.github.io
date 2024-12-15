@@ -1,5 +1,6 @@
 @use "../mixins/colors.scss";
 @use "../mixins/breakpoints.scss";
+// i dont think this is working so ill leave it here but ill be making seperate content
 @mixin default-typography {
   h1,
   .h1 {
@@ -102,6 +103,7 @@
   color: inherit;
 }
 @mixin button-base {
+  position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: space-between;
@@ -119,12 +121,4 @@
   color: inherit;
   transition: all var(--transition-duration-fast)
     var(--transition-timing-function);
-}
-@mixin button-primary {
-  background-color: var(--button-primary-bg-color);
-  color: var(--text-color-secondary);
-  &:hover {
-    box-shadow: 0 0 0.5rem 0 rgba(colors.$button-bg-white, 0.25),
-      0 0 2.5rem 1rem rgba(colors.$button-bg-white, 0.3);
-  }
 }
