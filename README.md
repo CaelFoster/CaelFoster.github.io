@@ -77,3 +77,13 @@ I accidentally made it only viewable on 1440px and lower at first using overflow
 hidden on the body, this prevented the user from scrolling to see the rest of the page
 if the content grew beyond the viewport. I fixed that issue but now the page sucks on
 lower resolutions, I will fix this later, i have to restructure the dom to do that I think. a couple divs like to stretch the page a bunch with how theyre animated.
+
+# Sources:
+
+[Chivo](https://fonts.google.com/specimen/Chivo)
+[Segoe](https://fonts.google.com/specimen/Segoe+UI)
+[Rays](https://codepen.io/creativeocean/pen/ZEEOxmK)
+[Bubbles](https://codepen.io/hbagency/pen/Nrdbdp)
+[Fog](https://s3-us-west-2.amazonaws.com/s.cdpn.io/721952/vanta.fog.min.js)
+[Dependencies](https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js)
+[MoreDependencies](https://cdnjs.cloudflare.com/ajax/libs/three.js/109/three.min.js)
