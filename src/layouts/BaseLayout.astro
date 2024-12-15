@@ -3,20 +3,17 @@
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro with Daisy UI (a Tailwind Plugin)</title>
-	</head>
-	
-	<body data-theme="">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro with my own custom styles</title>
+    <!-- Scripts -->
+    <script src="../js/remove-debut-attrs.js"></script>
+  </head>
 
-		
-
-		<slot/>
-
-
-	</body>
+  <body data-theme="">
+    <slot />
+  </body>
 </html>
