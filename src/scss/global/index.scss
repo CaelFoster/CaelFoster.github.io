@@ -26,6 +26,30 @@ body {
   width: 100vw;
   height: 100vh;
 }
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+#water {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.ray {
+  position: absolute;
+  top: -60%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  mix-blend-mode: color-dodge;
+}
 
 .deep-light {
   position: absolute;
