@@ -5,8 +5,8 @@ section.landing {
   margin-block: auto;
   container-type: inline-size;
 
+  color: var(--text-color-primary);
   .slider {
-    color: var(--text-color-primary);
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -30,14 +30,13 @@ section.landing {
           rgba(47, 0, 255, 0) 0%,
           rgba(0, 141, 255, 0.4) 100%
         ),
-        url("/wp-content/themes/propaganda-theme/assets/images/bg-noise.png"),
         var(--bg-img);
       background-size: cover;
       background-position: center;
       border-radius: var(--radius-lg);
       background-repeat: no-repeat;
-      background-blend-mode: normal, normal, color-dodge, normal;
-      .plan {
+      background-blend-mode: normal, normal, normal;
+      .content {
         transition: all var(--transition-duration-fast) ease;
         display: flex;
         flex-direction: column;
@@ -46,13 +45,16 @@ section.landing {
         padding: calc(var(--spacing-3xl) - 0.625rem) var(--spacing-xxl);
 
         .headline {
+          p {
+            padding-block: var(--spacing-sm);
+          }
           .heading {
             padding-bottom: var(--spacing-xs);
           }
         }
         .text-fields {
           margin-block: var(--spacing-sm);
-          .benefits {
+          .copy {
             display: flex;
             align-items: center;
             padding-block: 0.5rem;
@@ -71,10 +73,10 @@ section.landing {
       }
 
       @media (max-width: 40rem) {
-        .plan {
+        .content {
           padding: var(--spacing-xs) var(--spacing-xxs);
           .text-fields {
-            .benefits .eyebrow {
+            .copy .eyebrow {
               padding-left: 0;
             }
             .icon {
@@ -87,11 +89,11 @@ section.landing {
       //active state of card starts here
       &.active {
         @container (min-width:  #{$min-width}) {
-          .plan {
+          .content {
             padding-right: 0;
           }
         }
-        .plan {
+        .content {
           opacity: 1;
         }
       }
@@ -122,7 +124,7 @@ section.landing {
             height: 1.5rem;
           }
         }
-        .plan {
+        .content {
           pointer-events: none;
         }
       }
@@ -132,7 +134,7 @@ section.landing {
       .card {
         container-type: unset;
         height: unset;
-        .plan {
+        .content {
           width: 37.14rem;
           padding-right: unset;
         }

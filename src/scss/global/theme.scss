@@ -9,13 +9,13 @@ They are named by their role in the layout, and import from the semantically nam
 :root {
   // Colors
   --text-color-primary: #{colors.$white};
-  --text-color-secondary: #{colors.$black};
+  --text-color-secondary: #{colors.$dark-purple};
   // BG Colors
-  --body-color: #{colors.$dark-purple};
   // Stroke Colors
 
   // button colors
-
+  --button-bg-dark: #{colors.$dark-purple};
+  --button-bg-light: #{colors.$white};
   // Text Sizes
 
   --font-size-xxl: max(4rem, -1rem + 13.333vw, 12.5vw); // 128px - 240px

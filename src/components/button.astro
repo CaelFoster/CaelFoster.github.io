@@ -1,8 +1,7 @@
 ---
-import Bubbles from "./BubbleBackdrop.astro";
+const { href = "#" } = Astro.props;
 ---
 
-<button class="button">
-  <Bubbles />
+<a href={href} class="button">
   <slot />
-</button>
+</a>
