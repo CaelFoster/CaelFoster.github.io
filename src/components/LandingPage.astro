@@ -1,11 +1,56 @@
 ---
-import Bubbles from "./BubbleBackdrop.astro";
 import Button from "./button.astro";
 import "../styles/assets/css/modules/landing.css";
 ---
 
+<script src="../js/modules/cards.js"></script>
 <section class="landing default-typography">
   <h1>My Astro Site</h1>
-  <Bubbles />
-  <Button />
+  <div class="slider">
+    <div class="card" style={`--bg-img: url('img-url')`}>
+      <div class="plan">
+        <div class="headline">
+          <h2>Lorem</h2>
+          <p>Copy</p>
+        </div>
+        <div class="text-fields">
+          <div class="benefits">
+            <img src="/images/rocket.svg" alt="rocket" />
+            <p>Benefit 1</p>
+          </div>
+        </div>
+        <Button>Get Started</Button>
+      </div>
+    </div>
+    <div class="card" style={`--bg-img: url('img-url')`}>
+      <div class="plan">
+        <div class="headline">
+          <h2>Lorem</h2>
+          <p>Copy</p>
+        </div>
+        <div class="text-fields">
+          <div class="benefits">
+            <img src="/images/rocket.svg" alt="rocket" />
+            <p>Benefit 1</p>
+          </div>
+        </div>
+        <Button>Get Started</Button>
+      </div>
+    </div>
+    <div class="card" style={`--bg-img: url('img-url')`}>
+      <div class="plan">
+        <div class="headline">
+          <h2>Lorem</h2>
+          <p>Copy</p>
+        </div>
+        <div class="text-fields">
+          <div class="benefits">
+            <img src="/images/rocket.svg" alt="rocket" />
+            <p>Benefit 1</p>
+          </div>
+        </div>
+        <Button>Get Started</Button>
+      </div>
+    </div>
+  </div>
 </section>
